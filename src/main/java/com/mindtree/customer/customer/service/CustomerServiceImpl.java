@@ -10,6 +10,10 @@ public interface CustomerServiceImpl {
 	
 	public Customer getCustomer(int id);
 
-	public Customer addCustomer(Customer customer);
+	public int addCustomer(Customer customer);
+	
+	public int deleteCustomer(int id);
+	
+	public int updateCustomer(Customer customer,int id);
 
 }
