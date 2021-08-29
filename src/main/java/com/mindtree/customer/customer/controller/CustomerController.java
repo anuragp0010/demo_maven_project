@@ -15,7 +15,7 @@ import com.mindtree.customer.customer.exception.UserNotFoundException;
 import com.mindtree.customer.customer.service.CustomerServiceImpl;
 import com.mindtree.customer.customer.user.Customer;
 
-@RestController
+@RestController("/api/v1/")
 public class CustomerController {
 	
 	@Autowired

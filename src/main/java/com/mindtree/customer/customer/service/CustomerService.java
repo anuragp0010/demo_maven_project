@@ -41,7 +41,7 @@ public class CustomerService implements CustomerServiceImpl {
 	public List<Customer> getAllCustomer() {
 		// TODO Auto-generated method stub
 //		return customers;
-		return jdbcTemplate.query("SELECT * FROM customer_table", new BeanPropertyRowMapper<Customer>(Customer.class));
+		return jdbcTemplate.query("SELECT * FROM customer_details.customer_table", new BeanPropertyRowMapper<Customer>(Customer.class));
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class CustomerService implements CustomerServiceImpl {
 //		}
 //		return null;
 		
-		return jdbcTemplate.queryForObject("SELECT * FROM customer_table WHERE id=?", new BeanPropertyRowMapper<Customer>(Customer.class), id);
+		return jdbcTemplate.queryForObject("SELECT * FROM customer_details.customer_table c WHERE c.id=?", new BeanPropertyRowMapper<Customer>(Customer.class), id);
 	}
 
 	@Override
@@ -65,20 +65,20 @@ public class CustomerService implements CustomerServiceImpl {
 //		customers.add(customer);
 //		return customer;
 		
-		return jdbcTemplate.update("INSERT INTO customer_table (name, address) VALUES (?, ?)", new Object[] {customer.getName(), customer.getAddress()});
+		return jdbcTemplate.update("INSERT INTO customer_details.customer_table(name, address) VALUES (?, ?)", new Object[] {customer.getName(), customer.getAddress()});
 	}
 
 	@Override
 	public int deleteCustomer(int id) {
 		// TODO Auto-generated method stub
-		return jdbcTemplate.update("DELETE FROM customer_table WHERE id=?", id);
+		return jdbcTemplate.update("DELETE FROM customer_details.customer_table c WHERE c.id=?", id);
 //		return null;
 	}
 
 	@Override
 	public int updateCustomer(Customer customer, int id) {
 		// TODO Auto-generated method stub
-		return jdbcTemplate.update("UPDATE customer_table SET name = ?, address = ? WHERE id = ?", new Object[] {customer.getName(), customer.getAddress(), id});
+		return jdbcTemplate.update("UPDATE customer_details.customer_table c SET c.name = ?, c.address = ? WHERE c.id = ?", new Object[] {customer.getName(), customer.getAddress(), id});
 //		return null;
 	}
 
