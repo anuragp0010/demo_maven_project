@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.mindtree.customer</groupId>
 	<artifactId>customer</artifactId>
-	<version>2-SNAPSHOT</version>
+	<version>2</version>
 	<name>customer</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -33,7 +33,7 @@
 		<connection>scm:git:https://github.com/anuragp0010/demo_maven_project</connection>
 		<developerConnection>scm:git:https://github.com/anuragp0010/demo_maven_project</developerConnection>
 		<url>https://github.com/anuragp0010/demo_maven_project</url>
-		<tag>HEAD</tag>
+		<tag>v2</tag>
 	</scm>
 
 	<dependencies>
