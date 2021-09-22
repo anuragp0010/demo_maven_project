@@ -107,5 +107,20 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>3.13.0</version>
+				<configuration>
+					<linkXRef>false</linkXRef>
+					<targetJdk>1.8</targetJdk>
+					<sourceEncoding>utf-8</sourceEncoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
 
 </project>
