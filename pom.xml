@@ -9,11 +9,7 @@
 	</parent>
 	<groupId>com.mindtree.customer</groupId>
 	<artifactId>customer</artifactId>
-<<<<<<< HEAD
-	<version>0.0.2-SNAPSHOT</version>
-=======
 	<version>1.0.0</version>
->>>>>>> release/1.0.0
 	<name>customer</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
