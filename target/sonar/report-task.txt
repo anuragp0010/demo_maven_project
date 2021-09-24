@@ -1,0 +1,6 @@
+projectKey=com.mindtree.customer:customer
+serverUrl=http://localhost:9000
+serverVersion=9.1.0.47736
+dashboardUrl=http://localhost:9000/dashboard?id=com.mindtree.customer%3Acustomer
+ceTaskId=AXwZg3s7AUJhpaXf9dUd
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXwZg3s7AUJhpaXf9dUd

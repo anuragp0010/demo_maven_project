@@ -1,4 +1,5 @@
 FROM openjdk:11
-COPY target/*.jar app.jar
+WORKDIR /
+COPY target/customer-1.0.0-SNAPSHOT.jar customer-1.0.0-SNAPSHOT.jar
 EXPOSE 8090
-ENTRYPOINT ["java" ,"-jar","app.jar"]
+ENTRYPOINT ["java" ,"-jar","customer-1.0.0-SNAPSHOT.jar"]
