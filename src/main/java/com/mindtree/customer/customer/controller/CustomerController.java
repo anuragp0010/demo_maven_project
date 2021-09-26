@@ -21,6 +21,12 @@ public class CustomerController {
 	@Autowired
 	private CustomerServiceImpl service;
 	
+	@GetMapping(path = "/test")
+	public String showdata()
+	{
+		return "Welcome to the Customer SpringBoot App";
+	}
+	 
 	@GetMapping(path = "/customers")
 	public List<Customer> getAllCustomer()
 	{
